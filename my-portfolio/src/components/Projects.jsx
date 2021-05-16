@@ -1,51 +1,34 @@
 import Project from "./Project"
-
+import TRMA from '../recursos/TRMA.jpeg'
+import TRMW from '../recursos/TRMW.png'
+import JALULA from '../recursos/JALULA.PNG'
 
 const Projects = () => {
 
     const projects = [
         {
-            title: "Hiragana Flashcards",
-            description: "When learning japanese, knowing hiragana is one of the first steps, and having flashcards for it can come in really handy.",
-            github: "https://github.com/julietamullen/hiragana-flashcards",
-            vercel: "https://hiragana-flashcards-seven.vercel.app/",
-           
+            title: "TRMW",
+            description: "Una sencilla pagina con un login a traves de Facebook o Google que te recomienda una pelicula aleatoria segun diferentes criterios configurables",
+            github: "https://github.com/IvanAlmeidaReyes13/TFG",
+            tecnologias:"ReactJS",
+            img:TRMW,
         },
         {
-            title: "Japanese Colors",
-            description: "This was my first project with JavaScript. It's a small collection of flashcards showing how some colors are written in japanese.",
-            github: "https://github.com/julietamullen/japanesecolors",
-            vercel: "https://japanesecolors.vercel.app/",
+            title: "TRMA",
+            description: "Sencilla aplicacion movil para Android (y casi, quedan pequeños detalles) para IOS que te recomienda una pelicula aleatoria segun diferentes criterios configurables",
+            github: "https://github.com/IvanAlmeidaReyes13/TFG-mobile",
+            tecnologias:"ReactJS",
+            img:TRMA,
+        },
+        {
+            title: "GESTOR JALULA",
+            description: "Este es un simple gestor para un hotel que hice enteramente en PHP. Como se puede apreciar fue uno de mis primeros proyectos.",
+            github: "https://github.com/IvanAlmeidaReyes13/GestiorHotel",
+            tecnologias:"PHP",
+            img:JALULA,
             
-        },
-        {
-            title: "Rock, Paper, Scissors",
-            description: "You can play this against another player, or against the computer!",
-            github: "https://github.com/julietamullen/rockpaperscissors",
-            vercel: "https://rockpaperscissors-theta.vercel.app/",
-            
-        },
-        {
-            title: "Alchimia",
-            description: "A website for an imaginary bar. My goal was to play a little bit with animations and to come up with some fun drinks.",
-            github: "https://github.com/julietamullen/alchimia",
-            vercel: "https://alchimia.vercel.app/",
-           
-        },
-        {
-            title: "Challenge",
-            description: "This was a challenge for a job application! The idea was to make an app where users could redeem products through a points-based system.",
-            github: "https://github.com/julietamullen/aerolab-challenge",
-            vercel: "https://aerolab-challenge-phi.vercel.app/",
-            
-        },
-        {
-            title: "To-Do List",
-            description: "A simple to-do list app that uses localStorage so you can come back to it later and remember you still have things to do.",
-            github: "https://github.com/julietamullen/todolist-react",
-            vercel: "https://todolist-react-nine.vercel.app/",
-           
         }
+      
     ]
 
     return (
@@ -58,8 +41,8 @@ const Projects = () => {
                             title={project.title}
                             description={project.description}
                             github={project.github}
-                            vercel={project.vercel}
-                            
+                            tecnologias={project.tecnologias}
+                            img={project.img}
                             key={Math.floor(Math.random() * 100000)}/>
                 })
             }

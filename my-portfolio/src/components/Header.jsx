@@ -11,7 +11,7 @@ const Header = () => {
     }, [])
 
     return (
-        <div className="bg-gradient-to-br from-green-400 to-cyan-500 ">
+        <div className="header">
             <img src={IAR_9340} alt="Profile" className="profile" width="150" height="150" data-aos="fade-right"/>
             <div className="brief" data-aos="fade-left">
                 <h1>Iván Almeida Reyes</h1>

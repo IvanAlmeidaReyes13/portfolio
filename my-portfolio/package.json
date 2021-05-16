@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^12.7.3",
     "aos": "^2.3.4",
     "lodash": "^4.17.21",
+    "node": "^16.1.0",
     "pathseg": "^1.2.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -19,9 +20,9 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
